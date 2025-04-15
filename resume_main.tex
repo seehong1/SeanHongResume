@@ -1,11 +1,11 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5 in,top=0.9in,right=0.5in,bottom=0.7in]{geometry} % Document margins
+\usepackage[left=0.5 in,top=1in,right=0.5in,bottom=1in]{geometry} % Document margins
 \usepackage{enumitem}
 \setlist[itemize]{align=parleft,left=0pt..0.9em}
 \usepackage{amsmath,amssymb}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{3em}\rlap{#1}}
 \name{Sean Elizabeth Hong} % Your name
 % You can merge both of these into a single line, if you do not have a website.
 \address{seanhg4167@gmail.com \\ +1 (951) 295-9916 \\ Bay Area, CA \\ https://linkedin.com/in/seehong} 
@@ -51,15 +51,16 @@
     \item Automated NAND and device temperature monitoring by implementing PicoLogger sensors
      \item Resolved SSD unresponsiveness at high temperatures by optimizing Python scripts, resulting in their integration in future projects
     \item Integrated NI Data Acquisition (DAQ) API to an automated testing system and set up requisite hardware and software components
+    \item Verified SSD power consumption compliance with laptops by automating various applications and MobileMark benchmark tool workflows
  \end{itemize}
 
-\textbf{Jack Baskin School of Engineering, UC Santa Cruz} \hfill Santa Cruz, CA \\
-\hspace*{4mm}\textbf{Undergraduate Student Researcher} \hfill \text{Apr 2019 - Aug 2020}
- \begin{itemize}[left=2em]
- \itemsep -0.5em \vspace{-0.5em}
-    \item Conducted analysis of the temperature behavior of silicon thin films by utilizing MATLAB to solve the two-dimensional heat equation, taking into account both time and position dependencies
-    \item Demonstrated the ability to predict the total temperature increase during exposure to multiple laser pulses on silicon surfaces
- \end{itemize}
+% \textbf{Jack Baskin School of Engineering, UC Santa Cruz} \hfill Santa Cruz, CA \\
+% \hspace*{4mm}\textbf{Undergraduate Student Researcher} \hfill \text{Apr 2019 - Aug 2020}
+%  \begin{itemize}[left=2em]
+%  \itemsep -0.5em \vspace{-0.5em}
+%     \item Conducted analysis of the temperature behavior of silicon thin films by utilizing MATLAB to solve the two-dimensional heat equation, taking into account both time and position dependencies
+%     \item Demonstrated the ability to predict the total temperature increase during exposure to multiple laser pulses on silicon surfaces
+ % \end{itemize}
 
 
 \end{rSection} 
@@ -82,7 +83,14 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{PROJECT}
+\begin{rSection}{PROJECTS}
+\textbf{Universal Asynchronous Receiver-Transmitter (UART) Data Transfer} \hfill \text{Apr 2020 - Jun 2020}
+  \begin{itemize}[left=1em]
+  \itemsep -0.5em \vspace{-0.5em}
+    \item Implemented byte transfer via UART by designing a data transmission module on the Cypress PSoC5
+    \item Enabled interrupt-driven data transfer by configuring Interrupt Service Routines (ISRs) to monitor UART status flags and manage data buffers
+  \end{itemize}
+
 
  \textbf{Autonomous IR Sensor Robot} \hfill \text{Sept 2019 - Dec 2019}
   \begin{itemize}[left=1em]
