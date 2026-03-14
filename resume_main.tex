@@ -1,14 +1,14 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5 in,top=1in,right=0.5in,bottom=1in]{geometry} % Document margins
+\usepackage[left=0.45in,top=1in,right=0.45in,bottom=1in]{geometry} % Document margins
 \usepackage{enumitem}
-\setlist[itemize]{align=parleft,left=0pt..0.9em}
+\setlist[itemize]{align=parleft,left=0pt..0.8em}
 \usepackage{amsmath,amssymb}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{3em}\rlap{#1}}
 \name{Sean Elizabeth Hong} % Your name
 % You can merge both of these into a single line, if you do not have a website.
-\address{seanhg4167@gmail.com \\ +1 (951) 295-9916 \\ Bay Area, CA \\ https://linkedin.com/in/seehong} 
+\address{seanhg4167@gmail.com \\ +1 (951) 295-9916 \\ San Jose, CA \\ https://linkedin.com/in/seehong} 
 
 \begin{document}
 
@@ -22,36 +22,34 @@
 
 
 % \end{rSection}
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+
 
 
 
 %----------------------------------------------------------------------------------------
-% TECHINICAL STRENGTHS	
+%	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
-
-\begin{rSection}{EXPERIENCE}
-\textbf{Sandisk Technologies} \text{(Formerly Western Digital Corporation)} \hfill Milpitas, CA\\
-\hspace*{4mm}\textbf{Senior SSD Validation Engineer}  \hfill \text{Apr 2024 - Present}
- \begin{itemize}[left=2em]
+\vspace{3mm}
+\begin{rSection}{\large Experience}
+\textbf{\large Sandisk Technologies} \text{\footnotesize (Formerly Western Digital Corporation)}\vspace{3mm} \hfill Milpitas, CA\\\hspace*{0mm}\textbf{Senior SSD Validation Engineer}  \hfill \text{Apr 2024 - Present}
+ \begin{itemize}[left=0em]
  \itemsep -0.5em \vspace{-0.5em}
-     \item Evaluated consumer and data center Solid State Drive (SSD) power and performance metrics within the Device Validation team
-     \item Analyzed SSD thermal throttling profiles by controlling chamber temperature and tracking device health metrics
-   \item Developed validation plan for SSD data placement, improving random write performance by 20\%
-     \item Optimized test cases in custom Linux framework by removing redundancies in test coverage
+     \item \looseness=-1 Evaluated system-level power and performance for consumer and data center Solid State Drives (SSD)
+   \item Developed validation plan for a new SSD data placement, improving random write
+performance by 20\%
+     \item Analyzed SSD thermal throttling by tracking device health metrics under controlled chamber                   
+temperatures
+     \item Optimized test cases in a custom Linux framework by removing redundancies in test coverage
 
  \end{itemize}
-
-\hspace*{4mm}\textbf{Junior SSD Validation Engineer}  \hfill \text{Jan 2021 - Mar 2024}
- \begin{itemize}[left=2em]
+\vspace{2mm}
+\hspace*{0mm}\textbf{Junior SSD Validation Engineer}  \hfill \text{Jan 2021 - Mar 2024}
+ \begin{itemize}[left=0em]
  \itemsep -0.5em \vspace{-0.5em}
     \item Automated NAND and device temperature monitoring by implementing PicoLogger sensors
-     \item Resolved SSD unresponsiveness at high temperatures by optimizing Python scripts, resulting in their integration in future projects
-    \item Integrated NI Data Acquisition (DAQ) API to an automated testing system and set up requisite hardware and software components
-    \item Verified SSD power consumption compliance with laptops by automating various applications and MobileMark benchmark tool workflows
+    \item Integrated NI Data Acquisition (DAQ) APIs to measure SSD power across platforms with varying CPUs
+    \item Verified SSD power compliance with laptops by automating various applications and 
+MobileMark\\ benchmarking workflows
  \end{itemize}
 
 % \textbf{Jack Baskin School of Engineering, UC Santa Cruz} \hfill Santa Cruz, CA \\
@@ -65,7 +63,9 @@
 
 \end{rSection} 
 
-\begin{rSection}{SKILLS}
+\vspace{3mm}
+
+\begin{rSection}{\large SKILLS}
 
 % \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 % Technical Skills & A, B, C, D
@@ -79,13 +79,12 @@
 \textbf{Engineering: }Non-Volatile Memory Express (NVMe), PCI Express (PCIe), FIO, IOMeter, Linux, Git 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
 
-\begin{rSection}{PROJECTS}
+\vspace{3mm}
+
+\begin{rSection}{\large PROJECTS}
 \textbf{Universal Asynchronous Receiver-Transmitter (UART) Data Transfer} \hfill \text{Apr 2020 - Jun 2020}
-  \begin{itemize}[left=1em]
+  \begin{itemize}[left=0em]
   \itemsep -0.5em \vspace{-0.5em}
     \item Implemented byte transfer via UART by designing a data transmission module on the Cypress PSoC5
     \item Enabled interrupt-driven data transfer by configuring Interrupt Service Routines (ISRs) to monitor UART status flags and manage data buffers
@@ -93,7 +92,7 @@
 
 
  \textbf{Autonomous IR Sensor Robot} \hfill \text{Sept 2019 - Dec 2019}
-  \begin{itemize}[left=1em]
+  \begin{itemize}[left=0em]
   \itemsep -0.5em \vspace{-0.5em}
     \item Constructed an autonomous robot that navigated a light-colored field, detected an IR beacon, and dispensed ping pong balls into a designated zone, achieving a 99\% success rate
     \item Developed robot control system using analog filters, C language, and sensors, converting analog signals to digital for movement control
@@ -102,7 +101,15 @@
 
 \end{rSection}
 
-\begin{rSection}{Education}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\vspace{3mm}
+
+\begin{rSection}{\large Education}
 {\bf University of California, Santa Cruz} \hfill {Sept 2016 - Dec 2020} 
 \\ Bachelor of Science, Electrical Engineering with Honors in the Major\hfill 
 
